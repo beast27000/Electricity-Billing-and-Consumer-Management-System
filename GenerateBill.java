@@ -84,7 +84,7 @@ public class GenerateBill extends JFrame implements ActionListener{
             rs = c.s.executeQuery("select * from meter_info where meter_no = '"+meter+"'");
 
             if(rs.next()) {
-                area.append("\n    Meter Location: " + rs.getString("meter_loacation"));
+                area.append("\n    Meter Location: " + rs.getString("meter_location"));
                 area.append("\n    Meter Type:     " + rs.getString("meter_type"));
                 area.append("\n    Phase Code:        " + rs.getString("phase_code"));
                 area.append("\n    Bill Type:          " + rs.getString("bill_type"));
